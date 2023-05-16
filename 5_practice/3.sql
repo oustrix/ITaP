@@ -1,0 +1,10 @@
+SELECT
+    NAME, STUDENT_ID
+FROM
+    STUDENT
+WHERE
+    CITY NOT IN (
+    SELECT
+        CITY
+    FROM
+        UNIVERSITY);
